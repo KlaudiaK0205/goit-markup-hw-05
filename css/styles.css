@@ -264,11 +264,6 @@ img {
   height: 70px;
 }
 
-.icon-our-strengths:hover,
-.icon-our-strengths:focus {
-  stroke: var(--secondary-color);
-}
-
 .our-strengths-title {
   font-weight: 700;
   font-size: 14px;
