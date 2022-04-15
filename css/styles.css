@@ -196,7 +196,7 @@ img {
   fill: var(--secondary-color);
 }
 
-.agency:after {
+.agency-main:after {
   position: absolute;
   top: 76px;
   display: block;
@@ -207,6 +207,17 @@ img {
   border-radius: 2px;
 }
 
+.portfolio-main::after {
+  position: absolute;
+  top: 76px;
+  display: block;
+  content: "";
+  width: 58px;
+  height: 4px;
+  background: #2196F3;
+  border-radius: 2px;
+
+}
 /* ========== END HEADER ========== */
 
 /* ========== EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU ========== */
