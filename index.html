@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
-    <link rel="stylesheet" href="./css/style.css"/>
-    <link rel="stylesheet" href="./css/styles.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/styles.css"/>
     <title>WebStudio</title>
   </head>
 
@@ -20,7 +19,7 @@
           <a class="logo-web-studio logo-web-studio-light-theme link" href="./index.html"><span>Web</span>Studio</a>
 
           <ul class="navigation-list list">
-            <li class="navigation-list-item">
+            <li class="navigation-list-item agency">
               <a class="navigation-list-link link" href="./index.html">Agencja</a>
             </li>
             <li class="navigation-list-item">
@@ -59,7 +58,7 @@
               EFEKTYWNE ROZWIAZANIA DLA WASZEGO BIZNESU
             </h1>
 
-            <button class="modal-btn" type="button">Zamów usługę</button>
+            <button class="modal-btn" type="button" data-modal-open>Zamów usługę</button>
           </div>
       </section>
 
@@ -436,5 +435,18 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="close-btn-icon">
+            <use href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <script src="./js/modal.js"></script>
+
   </body>
 </html>
